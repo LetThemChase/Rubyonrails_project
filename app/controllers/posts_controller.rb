@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
     def index
-        @content_1="This i sample 1"
-        @content_2="This i sample 2"
+        @posts=Post.all
     end
     def new
     
