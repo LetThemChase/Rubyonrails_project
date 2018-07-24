@@ -1,5 +1,11 @@
 <h1>Blog Posts</h1>
-<h3>Sample post 1</h3>
-<p><%= @content_1%></P>
-<h3>Sample post 2</h3>
-<p><%= @content_2%></P>
+
+<% @posts.each do |posts| %>
+    <h3><%= link_to posts.title, posts %></h3>
+    <p><%= posts.body %></P>
+    <hr>
+
+<% end %>
+<%= link_to "Add New post",new_post_path %>
+
+

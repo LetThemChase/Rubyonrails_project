@@ -1,1 +1,11 @@
-<h1>show</h1>
+    <h1><%= @post.title %></h1>
+    <%= @post.updated_at.strftime("%d %b %Y") %>
+    <p><%= @post.body %></P>
+    <hr>
+    <%= link_to "Edit post",edit_post_path %>
+    <br>
+    <%= link_to "Delete post", @post, :confirm => "wan to delete?", :method => :delete %>
+    <% #link_to "Delete post", @post, confirm: "wan to delete?", method: :delete 
+    %>
+    <br>
+    <%= link_to "Go back", "." %>
