@@ -9,12 +9,7 @@
     Category: <%= link_to @post.category.name,category_path(:id => @post.category.id) %>
 
     <hr>
-    <%= link_to "Edit post",edit_post_path %>
     
-    <br>
-    <%= link_to "Delete post", @post, :confirm => "wan to delete?", :method => :delete %>
-    <% #link_to "Delete post", @post, confirm: "wan to delete?", method: :delete 
-    %>
     <br>
     <%= link_to "Go back", "." %>
 
