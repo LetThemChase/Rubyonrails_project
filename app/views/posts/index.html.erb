@@ -1,11 +1,24 @@
+<div class="post">
 <h1>Blog Posts</h1>
-
-<% @posts.each do |posts| %>
-    <h3><%= link_to posts.title, posts %></h3>
-    <p><%= posts.body %></P>
-    <hr>
-
+</div>
+<br>
+<% @posts.each do |post| %>
+    
+    <div class="post">
+    <h2 class="title"><%= link_to post.title, post %></h2>
+    <div class="entry"><p><%= post.body %></P></div>
+    <div class="byline">
+							<p class="meta"><%= post.created_at.strftime("%d %b %Y") %>  Posted by <a href="#">Someone</a></p>
+							<p class="links"><%= link_to "Read More",post %>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="b0x w">Comments</a></p>
+						</div>
+    </div>
 <% end %>
-<%= link_to "Add New post",new_post_path %>
 
+
+<!--
+<p><%=# link_to "See posts" , posts_path 
+%></p>
+<p><h3><%= #link_to "Admin" , admin_root_path 
+%></h3></p>
+-->
 
