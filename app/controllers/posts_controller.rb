@@ -35,6 +35,7 @@ class PostsController < ApplicationController
     end
     def show
         @post=Post.find(params[:id])
+        @user=AdminUser.all
     end
     def destroy
         @post=Post.find(params[:id])
@@ -44,5 +45,5 @@ class PostsController < ApplicationController
 end
 
 def post_params
-    params.require(:post).permit(:title, :body, :category_id)
+    params.require(:post).permit(:title, :body, :category_id, :admin_user_id)
   end

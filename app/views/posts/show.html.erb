@@ -1,6 +1,9 @@
 <div class="post" >
     <h1><%= @post.title %></h1>
     <%= @post.updated_at.strftime("%d %b %Y") %>
+    <br>
+    Created By: <%= @post.admin_user.name %>
+    <br><br>
     <p><%= @post.body %></P>
     
     Category: <%= link_to @post.category.name,category_path(:id => @post.category.id) %>
