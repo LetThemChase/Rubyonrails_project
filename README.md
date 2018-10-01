@@ -1,12 +1,12 @@
 Visit
 
-   keshavrblog@herokuapp.com
+   www.keshavrblog@herokuapp.com
     
 __________________________________
 
 Add Blogs
   
-    keshavrblog@herokuapp.com/admin
+   www.keshavrblog@herokuapp.com/admin
     
     login using 
         user - admin@example.com
