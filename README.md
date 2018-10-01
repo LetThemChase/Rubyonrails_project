@@ -1,6 +1,6 @@
 Visit
 
-    <a href="keshavrblog@herokuapp.com">keshavrblog@herokuapp.com</a>
+   keshavrblog@herokuapp.com
     
 __________________________________
 
