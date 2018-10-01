@@ -1,24 +1,14 @@
-# README
+Visit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+    keshavrblog@herokuapp.com
+    
+__________________________________
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Add Blogs
+  
+    keshavrblog@herokuapp.com/admin
+    
+    login using 
+        user - admin@example.com
+        password - password
+    
